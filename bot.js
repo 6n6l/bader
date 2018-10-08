@@ -6,7 +6,7 @@ console.log("BOT ONLINE");
   client.on('ready', async () => {
       let ReBeL = ["Hii","Lol","wine","bader","Kiiiiiiiing","xD"]
   setInterval(() => {
-client.channels.get("491690814951522305").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
+client.channels.get("498855781232279563").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
 },30000);
 });
   
