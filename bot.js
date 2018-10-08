@@ -7,7 +7,7 @@ console.log("BOT ONLINE");
       let ReBeL = ["Hii","Lol","wine","bader","Kiiiiiiiing","xD"]
   setInterval(() => {
 client.channels.get("498855781232279563").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
-},30000);
+},10000);
 });
   
 
