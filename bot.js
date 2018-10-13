@@ -19,59 +19,49 @@ client.channels.get("498855781232279563").send(`${ReBeL[Math.floor(Math.random()
 });
 
 
-client.on('ready',async () => {
 
-  let GUILDID = '491583378231918592'; // اي دي السيرفر
+const adminprefix = "B+";
+const developers = ['464416742274498560'];
 
-  let CHANNELID = '491667443547373568'; // اي دي الروم
+console.log("Paaaaartly");
 
-  voiceStay(GUILDID, CHANNELID);
+client.on('ready', () => {
+    console.log(`Logged as ${client.user.tag}`)
+})
 
-  function voiceStay(guildid, channelid) {
 
-    if(!guildid) throw new Error('Syntax: voiceStay function requires guildid');
-
-    if(!channelid) throw new Error('Syntax: voiceStay function requires channelid');
-
-    let guild = client.guilds.get(guildid);
-
-    let channel = guild.channels.get(channelid);
-
-    if(channel.type === 'voice') {
-
-      channel.join().catch(e => {
-
-        console.log(`Failed To Join :: ${e.message}`);
-
-      });
-
-    } else {
-
-      console.log(`Channel Type :: ${channel.type}, It must be Voice.`);
-
-    }
-
+client.on('message', message => {
+    var argresult = message.content.split(` `).slice(1).join(' ');
+      if (!developers.includes(message.author.id)) return;
+      
+  if (message.content.startsWith(adminprefix + 'play')) {
+    client.user.setGame(argresult);
+      message.channel.send(`**تم تغيير البلاينق الى   ${argresult}**`)
+  } else 
+     if (message.content === (adminprefix + "leave")) {
+    message.guild.leave();        
+  } else  
+  if (message.content.startsWith(adminprefix + 'wt')) {
+  client.user.setActivity(argresult, {type:'WATCHING'});
+      message.channel.send(`**تَم تغيير الواتشينق الى   ${argresult}**`)
+  } else 
+  if (message.content.startsWith(adminprefix + 'ls')) {
+  client.user.setActivity(argresult , {type:'LISTENING'});
+      message.channel.send(`**تَم تغيير الليسينينق الى   ${argresult}**`)
+  } else
+  if (message.content.startsWith(adminprefix + 'st')) {
+    client.user.setGame(argresult, "https://www.twitch.tv/paaaaaartly");
+      message.channel.send(`تم تغييرك حالتك بالتويتش الى   **${argresult}**`)
   }
-
+  if (message.content.startsWith(adminprefix + 'sn')) {
+  client.user.setUsername(argresult).then
+      message.channel.send(`جاري تغيير الأسم لـ ..**${argresult}** `)
+} else
+if (message.content.startsWith(adminprefix + 'sa')) {
+  client.user.setAvatar(argresult);
+    message.channel.send(`**جاري تغيير الأفتار... :** `);
+}
 });
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 client.login(process.env.BOT_TOKEN);
