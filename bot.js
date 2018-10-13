@@ -21,7 +21,7 @@ client.channels.get("498855781232279563").send(`${ReBeL[Math.floor(Math.random()
 
 
 const adminprefix = "B+";
-const developers = ['464416742274498560'];
+const developers = ['476130473681092608'];
 
 console.log("Paaaaartly");
 
