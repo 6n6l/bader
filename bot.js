@@ -12,7 +12,7 @@ console.log("BOT ONLINE");
 
   setInterval(() => {
 
-client.channels.get("474147192849039371").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
+client.channels.get("506722849600569346").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
 
 },10000);
 
