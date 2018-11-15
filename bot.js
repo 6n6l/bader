@@ -25,7 +25,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'rep') {
-    msg.reply('#rep @SirBader.#4579');
+    msg('#rep');
   }
 });                
 
