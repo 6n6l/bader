@@ -24,8 +24,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
+  if (msg.content === 'rep') {
+    msg.reply('#rep @! Sir Bader.#4579');
   }
 });                
 
