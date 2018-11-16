@@ -14,7 +14,7 @@ console.log("BOT ONLINE");
 
 client.channels.get("506722849600569346").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
 
-},1000);
+},2000);
 
 });
 
