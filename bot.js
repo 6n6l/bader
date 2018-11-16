@@ -34,7 +34,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === '-ريب'){
-        message.channel.send('#rep ${member}')
+        message.channel.send('#rep @SirBader.#4579')
     }
 });
 
