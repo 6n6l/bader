@@ -44,7 +44,7 @@ client.on('message', message => {
 
   setInterval(() => {
 
-client.channels.get("506722849600569346").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
+client.channels.get("515526493929996289").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
 
 },5000);
 
