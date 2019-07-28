@@ -32,7 +32,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === '!ريب'){
-        message.channel.send('#rep <@491028352111476737>')
+        message.channel.send('#rep <@476130473681092608>')
     }
 });
 
@@ -44,7 +44,7 @@ client.on('message', message => {
 
   setInterval(() => {
 
-client.channels.get("515526493929996289").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
+client.channels.get("605071578581172282").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
 
 },5000);
 
